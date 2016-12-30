@@ -1,4 +1,4 @@
-FROM 860100747351.dkr.ecr.us-east-1.amazonaws.com/pyspark-notebook:latest
+FROM 3blades/pyspark-notebook:latest
 
 MAINTAINER 3Blades <contact@g3blades.io>
 

@@ -1,4 +1,4 @@
-FROM 860100747351.dkr.ecr.us-east-1.amazonaws.com/minimal-notebook:latest
+FROM 3blades/minimal-notebook
 
 MAINTAINER 3Blades <contact@3blades.io>
 

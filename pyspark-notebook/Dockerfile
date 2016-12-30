@@ -1,6 +1,4 @@
-# Copyright (c) Jupyter Development Team.
-# Distributed under the terms of the Modified BSD License.
-FROM 860100747351.dkr.ecr.us-east-1.amazonaws.com/datascience-notebook
+FROM 3blades/datascience-notebook
 
 MAINTAINER 3Blades <contact@3blades.io>
 

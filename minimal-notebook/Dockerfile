@@ -1,4 +1,4 @@
-FROM notebook
+FROM 3blades/base-notebook
 
 MAINTAINER 3Blades <contact@3blades.io>
 

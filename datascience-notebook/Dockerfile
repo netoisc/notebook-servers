@@ -1,4 +1,4 @@
-FROM 860100747351.dkr.ecr.us-east-1.amazonaws.com/scipy-notebook:latest
+FROM 3blades/scipy-notebook:latest
 
 MAINTAINER 3Blades <contact@3blades.io>
 

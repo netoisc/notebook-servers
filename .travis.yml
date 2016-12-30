@@ -1,0 +1,34 @@
+language: go
+go:
+  - 1.7.4
+branches:
+  only:
+    - master
+services:  
+#Enable docker service inside travis
+  - docker
+before_install:
+  - go get -t -v ./...
+script:
+  - make
+  - export PATH=$PATH:$HOME/.local/bin # put aws in the path
+after_script:
+  #build, tag and push images
+  - docker build -t 3blades/base-notebook base-notebook/.
+  - docker push 3blades/base-notebook:latest
+  - docker build -t 3blades/minimal-notebook minimal-notebook/.
+  - docker push 3blades/minimal-notebook:latest
+  - docker build -t 3blades/scipy-notebook scipy-notebook/.
+  - docker push 3blades/scipy-notebook:latest
+  - docker build -t 3blades/r-notebook r-notebook/.
+  - docker push 3blades/r-notebook:latest
+  - docker build -t 3blades/datascience-notebook datascience-notebook/.
+  - docker push 3blades/datascience-notebook:latest
+  - docker build -t 3blades/pyspark-notebook pyspark-notebook/.
+  - docker push 3blades/pyspark-notebook:latest
+  - docker build -t 3blades/all-spark-notebook all-spark-notebook/.
+  - docker push 3blades/all-spark-notebook:latest
+  - docker build -t 3blades/jupyterlab jupyterlabs/.
+  - docker push 3blades/jupyterlab:latest
+notifications:
+  slack: 3blades:Ed1GWtOJ87DM8J9768Euk81I

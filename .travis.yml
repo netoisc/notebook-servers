@@ -9,6 +9,7 @@ services:
   - docker
 before_install:
   - go get -t -v ./...
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" -e="$DOCKER_EMAIL"
 script:
   - make
   - export PATH=$PATH:$HOME/.local/bin # put aws in the path

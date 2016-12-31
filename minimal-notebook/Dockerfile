@@ -27,7 +27,9 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
     && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pip install -q --upgrade pip wheel setuptools
+RUN pip install --upgrade pip
+# https://github.com/ContinuumIO/anaconda-issues/issues/542
+RUN pip install -q --upgrade --ignore-installed pip wheel setuptools
 RUN pip install \
     psycopg2 \
     pymongo \

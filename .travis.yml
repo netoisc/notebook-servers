@@ -15,14 +15,14 @@ script:
   - export PATH=$PATH:$HOME/.local/bin # put aws in the path
 after_script:
   #build, tag and push images
-  - docker build -t 3blades/base-notebook base-notebook/.
-  - docker push 3blades/base-notebook:latest
-  - docker build -t 3blades/minimal-notebook minimal-notebook/.
-  - docker push 3blades/minimal-notebook:latest
-  - docker build -t 3blades/scipy-notebook scipy-notebook/.
-  - docker push 3blades/scipy-notebook:latest
-  - docker build -t 3blades/r-notebook r-notebook/.
-  - docker push 3blades/r-notebook:latest
+  #- docker build -t 3blades/base-notebook base-notebook/.
+  #- docker push 3blades/base-notebook:latest
+  #- docker build -t 3blades/minimal-notebook minimal-notebook/.
+  #- docker push 3blades/minimal-notebook:latest
+  #- docker build -t 3blades/scipy-notebook scipy-notebook/.
+  #- docker push 3blades/scipy-notebook:latest
+  #- docker build -t 3blades/r-notebook r-notebook/.
+  #- docker push 3blades/r-notebook:latest
   - docker build -t 3blades/datascience-notebook datascience-notebook/.
   - docker push 3blades/datascience-notebook:latest
   - docker build -t 3blades/pyspark-notebook pyspark-notebook/.

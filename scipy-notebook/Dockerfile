@@ -12,6 +12,7 @@ RUN apt-get update && \
 
 # Install Python 3 packages
 RUN conda install --quiet --yes \
+    'conda-build' \
     'ipywidgets=5.1*' \
     'pandas=0.17*' \
     'numexpr=2.5*' \
@@ -58,9 +59,9 @@ RUN conda create --quiet --yes -p $CONDA_DIR/envs/python2 python=2.7 \
     'mpld3=0.2*' \
     && conda clean -tipsy
 
-# Add shortcuts to distinguish pip for python2 and python3 envs
-RUN ln -s $CONDA_DIR/envs/python2/bin/pip $CONDA_DIR/bin/pip2 && \
-    ln -s $CONDA_DIR/bin/pip $CONDA_DIR/bin/pip3
+# Add shortcuts to distinguish pip for python2. python3 is enabled
+# as default with pip already
+RUN ln -s $CONDA_DIR/envs/python2/bin/pip $CONDA_DIR/bin/pip2
 
 # Install Python 2 kernel spec globally
 RUN $CONDA_DIR/envs/python2/bin/python -m ipykernel install

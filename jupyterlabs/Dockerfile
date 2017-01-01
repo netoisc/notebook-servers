@@ -7,6 +7,7 @@ USER root
 RUN apt-get update && apt-get install -yq --no-install-recommends \
     bzip2 \
     ca-certificates \
+    gcc \
     python-dev \
     python3-dev \
     python-pip \

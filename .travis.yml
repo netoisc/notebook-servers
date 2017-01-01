@@ -25,11 +25,11 @@ after_script:
   #- docker push 3blades/r-notebook:latest
   #- docker build -t 3blades/datascience-notebook datascience-notebook/.
   #- docker push 3blades/datascience-notebook:latest
-  - docker build -t 3blades/pyspark-notebook pyspark-notebook/.
-  - docker push 3blades/pyspark-notebook:latest
-  - docker build -t 3blades/all-spark-notebook all-spark-notebook/.
-  - docker push 3blades/all-spark-notebook:latest
-  #- docker build -t 3blades/jupyterlab jupyterlabs/.
-  #- docker push 3blades/jupyterlab:latest
+  #- docker build -t 3blades/pyspark-notebook pyspark-notebook/.
+  #- docker push 3blades/pyspark-notebook:latest
+  #- docker build -t 3blades/all-spark-notebook all-spark-notebook/.
+  #- docker push 3blades/all-spark-notebook:latest
+  - docker build -t 3blades/jupyterlab jupyterlabs/.
+  - docker push 3blades/jupyterlab:latest
 notifications:
   slack: 3blades:Ed1GWtOJ87DM8J9768Euk81I

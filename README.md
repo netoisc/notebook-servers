@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/3Blades/notebook-servers.svg?branch=master)](https://travis-ci.org/3Blades/notebook-servers)
-[![slack in](https://slackin-tkscnxhpky.now.sh/badge.svg)](https://slackin-tkscnxhpky.now.sh/)
+[![slack in](https://slackin-pypmyuhqds.now.sh/badge.svg)](https://slackin-pypmyuhqds.now.sh/)
 
 # Data Science Notebooks configured to work with 3Blades
 

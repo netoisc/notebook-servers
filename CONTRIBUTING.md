@@ -1,6 +1,6 @@
 # Contributing Guidelines
 
-Interested in making a contribution? Great! Just read through this guide and you should be good to go! If you have any questions or concerns, feel free to reach out to us in our Slack [community channel](https://slackin-tkscnxhpky.now.sh/).
+Interested in making a contribution? Great! Just read through this guide and you should be good to go! If you have any questions or concerns, feel free to reach out to us in our Slack [community channel](https://slackin-pypmyuhqds.now.sh/).
 
 ## TOC
 
@@ -57,7 +57,7 @@ We are constantly cleaning code and re factoring, and understand there is almost
 
 ### Talking to other 3Blades users and contributors
 
-We primarily use our Slack community channel to communicate with 3Blades users and contributors. You can sign up for a free account [here](https://slackin-tkscnxhpky.now.sh/).
+We primarily use our Slack community channel to communicate with 3Blades users and contributors. You can sign up for a free account [here](https://slackin-pypmyuhqds.now.sh/).
 
 ### Conventions and Coding Style
 
